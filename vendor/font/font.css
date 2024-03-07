@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Warnock Pro Semibold';
+    src: url('Warnock Pro Semibold.otf');
+    src: local('Warnock Pro Semibold.otf'), 
+        url('Warnock Pro Semibold.otf') format('otf'),
+        url('Warnock Pro Semibold.otf') format('truetype'),
+        url('HelveticaNowText-BlackItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
