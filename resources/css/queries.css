@@ -158,6 +158,7 @@
     .section_intro
     {
         height: 100vh;
+        background-attachment: scroll;
     }
     .navbar
     {
