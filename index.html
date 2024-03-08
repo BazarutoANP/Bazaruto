@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <head>
         <title>Welcome to Bazaruto</title>
 
         <meta charset="UTF-8">
@@ -28,22 +28,39 @@
         <section class="section_intro">
 
             <div class="navbar_container">
-                <nav class="navbar">
-                    <div class="nav_logo"> 
-                        <img src="resources/img/logos/logo_color.svg" alt="Park logo">
-                    </div>
-                    <div class="nav_content">
-                        <ul>
-                            <li><a href="#">Park Overview</a></li>
-                            <li><a href="#">What to do/see</a></li>
-                            <li><a href="#">Conservation & Community</a></li>
-                            <li><a href="#">Rules & Regulations</a></li>
-                            <li><a href="#">African Parks</a></li>
-                            <li><a href="#">Donate</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                <div class="" id="nav_wrapper">
+                    <nav class="navbar" id="navbar_id">
+                        <div class="nav_logo"> 
+                            <a href="index.html"><img src="resources/img/logos/logo_color.svg" alt="Park logo"></a>
+                        </div>
+                        <div class="nav_content">
+                            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="menu_icon">menu</i></a>
+                            
+                            <ul class="hide-on-med-and-down">
+                                <li><a href="#section_overview">Park Overview</a></li>
+                                <li><a href="#section_whattosee">What to do/see</a></li>
+                                <li><a href="#section_community">Conservation & Community</a></li>
+                                <li><a href="#section_rules">Rules & Regulations</a></li>
+                                <li><a href="#section_ap">African Parks</a></li>
+                                <li><a href="#section_contact">Donate</a></li>
+                                <li><a href="#section_contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <ul class="sidenav sidenav_mobile" id="mobile-demo" >
+                    <li>
+                        <a href="index.html"><img src="resources/img/logos/logo_color.svg" alt="baz logo"></a>
+                    </li>
+                    <li><a href="#section_overview">Park Overview</a></li>
+                    <li><a href="#section_whattosee">What to do/see</a></li>
+                    <li><a href="#section_community">Conservation & Community</a></li>
+                    <li><a href="#section_rules">Rules & Regulations</a></li>
+                    <li><a href="#section_ap">African Parks</a></li>
+                    <li><a href="#section_contact">Donate</a></li>
+                    <li><a href="#section_contact">Contact Us</a></li>
+                </ul>
+                
                 <div class="container_Bazaruto ">
                     <h1 class="fade-in-text" >Bazaruto Archipelago <br>National Park</h1>
 
@@ -58,8 +75,8 @@
                     </div>
 
                     <div class="container_intro_buttons">
-                        <button class="btn waves-effect">Know more &#8595;</button>                   
-                        <button class="btn waves-effect donate">Donate</button> 
+                        <button onclick="window.location.href = '#section_overview';" class="btn waves-effect">Know more &#8595;</button>                   
+                        <button onclick="window.location.href = '#section_donate';" class="btn waves-effect donate">Donate</button> 
                     </div>
                                       
                 </div>
@@ -67,7 +84,7 @@
             
         </section>
 
-        <section class="section_overview section_white">
+        <section class="section_overview section_white" id="section_overview">
             <div class="overview_map_container">
                 <div class="map_container fade-in">
                     <img src="resources/img/bazaruto/bazaruto_map.svg" alt="Bazaruto Map">
@@ -92,7 +109,7 @@
             </div>
         </section>
 
-        <section class="section_whattosee section_gray">
+        <section class="section_whattosee section_gray" id="section_whattosee">
             <div class="whattosee_img_container">
                 <div class="overlay"></div>
                 <div class="whattosee_slider">
@@ -111,7 +128,7 @@
                     <div class="fade-in waves-effect">
                         <img src="resources/img/tourism/t (5).jpg" alt="What to see img">
                     </div>
-                    <div class="fade-in waves-effect">
+                    <div class="fade-in waves-effect" id="last_slide">
                         <img src="resources/img/tourism/t (14).jpg" alt="What to see img">
                     </div>
                     <div class="fade-in waves-effect">
@@ -120,7 +137,7 @@
                     <div class="fade-in waves-effect">
                         <img src="resources/img/tourism/t (8).jpg" alt="What to see img">
                     </div>
-                    <div class="fade-in waves-effect">
+                    <div class="fade-in waves-effect" >
                         <img src="resources/img/tourism/t (11).jpg" alt="What to see img">
                     </div>
                 </div>
@@ -149,14 +166,14 @@
     
                     </div>
                     <div class="container_buttons">                  
-                        <button class="btn waves-effect donate">Know more</button> 
+                        <button onclick="window.open('https://www.africanparks.org/the-parks/bazaruto/visit-bazaruto', '_blank')" class="btn waves-effect donate">Know more</button> 
                     </div>
                 </div>
             </div>
             
         </section>
 
-        <section class="section_community section_white">
+        <section class="section_community section_white" id="section_community">
             <div class="info_title">
                 <h3 class="fade-in">
                     Conservation & Community
@@ -213,13 +230,13 @@
                 </div>
             </div>
             <div class="container_buttons">                  
-                <button class="btn waves-effect community">Know more</button> 
+                <button onclick="window.open('https://www.africanparks.org/our-work/community-development', '_blank')"  class="btn waves-effect community">Know more</button> 
             </div>
 
                            
         </section>
 
-        <section class="section_rules section_gray">
+        <section class="section_rules section_gray" id="section_rules">
             <div class="container_rules">
                 <div class="info_title">
                     <h3 class="fade-in">
@@ -380,7 +397,7 @@
             </div>
         </section>
 
-        <section class="section_ap">
+        <section class="section_ap" id="section_ap" >
             <div class="container_ap">
                 <div class="container_ap_empty">
 
@@ -397,16 +414,16 @@
                             </p>
                         </div>
                         <div class="container_buttons">
-                            <button class="btn waves-effect ap_btn">Know more</button>
+                            <button onclick="window.open('https://www.africanparks.org', '_blank')" class="btn waves-effect ap_btn">Know more</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section_contact section_white">
+        <section class="section_contact section_white" id="section_contact">
             <div class="container_contact">
-                <div class="container_donate">
+                <div class="container_donate" id="section_donate">
                     <div class="donate_form">
                         <div class="info_title">
                             <div class="container_donate_logos">
@@ -426,15 +443,23 @@
                             
                         </div>
                         <div class="container_buttons">
-                            <button class="btn waves-effect ap_btn">Donate</button>
+                            <button onclick="window.open('https://www.africanparks.org/donate', '_blank')" class="btn waves-effect ap_btn">Donate</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="container_contact_us">
-
-                    <div class="container_contact_us" >
-                        <form method="post">
+ 
+                    <div class="contact_us" > 
+                        <div class="info_title fade-in">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <div class="container_ap_text fade-in">
+                            <p>
+                                If you have any questions, suggestions, or would like to collaborate on a conservation project, please don't hesitate free to contact the Park Management team at: <a href="mailto:bazaruto@africanparks.org">Bazaruto@africanparks.org</a>, or leave us a message below:
+                            </p>
+                        </div>
+                        <form method="post" class="contact_us_form fade-in">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">Name<span>*</span></label>
@@ -455,44 +480,20 @@
                                 <input type="number" class="form-control" name="telefone" id="" placeholder="Telephone/Cellphone" required>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputAddress">Address<span>*</span></label>
-                                <input type="text" class="form-control" name="endereco" id="" placeholder="Av. Eduardo Mondlane" required>
-                            </div>
-                            
+                           
                             <div class="form-row">
-                                
-                                <div class="form-group col-md-6">
-                                <label for="inputState">Province<span>*</span></label>
-                                <select id="inputState" name="provincia" class="form-control custom-select mr-sm-6" id="inlineFormCustomSelect">
-                                    <option selected style="font-style:italic">Province</option>
-                                    <option>Maputo</option>
-                                    <option>Gaza</option>
-                                    <option>Inhambane</option>
-                                    <option>Manica</option>
-                                    <option>Sofala</option>
-                                    <option>Tete</option>
-                                    <option>Zambeze</option>
-                                    <option>Nampula</option>
-                                    <option>Cabo Delgado</option>
-                                    <option>Niassa</option>
-                                </select>
+                                <div class="form-group">
+                                    <label for="inputAddress">Subject<span>*</span></label>
+                                    <input type="text" class="form-control" name="assunto" id="" placeholder="Subject" required>
                                 </div>
-                                <div class="form-group col-md-6">
-                                <label for="inputCity">City<span>*</span></label>
-                                <input type="text" class="form-control" name="cidade" placeholder="Maputo" id="inputCity" required>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Your message here...<span>*</span></label>
+                                    <textarea class="form-control" name="mensagem" placeholder="Your message..." id="exampleFormControlTextarea1" rows="3" required></textarea>
                                 </div>
-                            
                             </div>
-                            <div class="form-group">
-                                <label for="inputAddress">Subject<span>*</span></label>
-                                <input type="text" class="form-control" name="assunto" id="" placeholder="Assunto" required>
+                            <div class="container_buttons">
+                                <button class="btn waves-effect">Send</button>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Your message here...<span>*</span></label>
-                                <textarea class="form-control" name="mensagem" placeholder="Sua mensagem..." id="exampleFormControlTextarea1" rows="3" required></textarea>
-                            </div>
-                            <button type="submit" name="send_msg" class="m_btn">Send</button>
                         </form>
                     </div>
                 </div>
@@ -500,15 +501,51 @@
         </section>
 
         
-        
+        <footer class="footer">
+            <div class="container_footer_park">
+               
+                <h5>Bazaruto Arquipelago National Park</h5>
+                <p>Condomínio Praia de Paraiso.<br>Rua de Outubro. Bairro 19 de Outubro. Municipio de Vilankulo. <br>Inhambane. Mocambique</p>
+                <a href="mailto:bazaruto@africanparks.org">bazaruto@africanparks.org</a>
+                <div class="footer_logos">
+                    <img src="resources/img/logos/logo_baz_white.png" alt="footer logo">
+                    <img src="resources/img/logos/logo_anac_white.png" alt="footer logo">
+                    <img src="resources/img/logos/African_Parks_logo_white.png" alt="footer logo">
+                </div>
+            </div>
+            <div class="container_footer_contacts">
+                <div class="footer_links">
+                    <h5>Useful Links</h5>
+                    <ul>
+                        <li><a href="https://www.africanparks.org/donate" target="_blabk">Donate</a></li>
+                        <li><a href="#" target="_blabk">Indemity Form</a></li>
+                        <li><a href="resources/files/codes of cunduct.zip" download>Codes of Cunduct</a></li>
+                        <li><a href="https://www.anac.gov.mz/" target="_blabk">ANAC</a></li>
+                        <li><a href="https://www.africanparks.org/" target="_blabk">African Parks Network</a></li>
+                        <li class="li_social_links">
+                            <a href="https://www.facebook.com/bazarutopark/" target="_blabk"><ion-icon name="logo-facebook"></ion-icon></a> 
+                            <a href="https://www.instagram.com/bazaruto_national_park/" target="_blabk"><ion-icon name="logo-instagram"></ion-icon></a> 
+                            <a href="https://wa.me/850765512" target="_blabk"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                            <a href="https://www.youtube.com" target="_blabk"><ion-icon name="logo-youtube"></ion-icon></a>  
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_upbtn">
+                    <button onclick="topFunction()" id="myBtn" class="btn">
+                        <i class="material-icons">expand_less</i>
+                    </button>
+                </div>
+            </div>
+        </footer>
 
 
 
-
-        <script   src="vendor/materialize/js/materialize.js" type="text/javascript" charset="utf-8"></script>
         <script   src="resources/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script   src="vendor/materialize/js/materialize.js" type="text/javascript" charset="utf-8"></script>
         <script   src="resources/js/bazaruto.js" type="text/javascript" charset="utf-8"></script>
         <script   src="vendor/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     </body>
 </html>

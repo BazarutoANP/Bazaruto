@@ -1,0 +1,297 @@
+@media only screen and (max-width: 1024px) 
+{
+
+}
+
+@media only screen and (max-width: 912px) 
+{
+    .container_Bazaruto
+    {
+        padding-top: 0;
+    }
+    .section_overview
+    {
+        padding: 50px 0;
+    }
+    .overview_map_container
+    {
+        width: 75% !important;
+    }
+    .section_whattosee
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    .whattosee_text_container, .whattosee_img_container
+    {
+        width: 100%;
+    }
+    .whattosee_slider
+    {
+        row-gap: 8px !important;
+    }
+    .whattosee_text_container
+    {
+        padding: 30px 0 50px 0;
+    }
+    .community_content
+    {
+        flex-direction: column-reverse;
+    }
+    .community_text, .community_imgs
+    {
+        width: 100%;
+
+    }
+    .section_community
+    {
+        height: auto;
+        padding: 50px 40px;
+    }
+    .community_imgs
+    {
+        padding: 10px;
+    }
+    .community_text
+    {
+        padding: 25px 10px;
+    }
+    .community_text .info_text
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .section_rules
+    {
+        padding: 50px 30px;
+    }
+    .rules_text
+    {
+        flex-direction: column;
+    }
+    .container_rules_text, .container_rules_links
+    {
+        width: 100%;
+    }
+    .container_rules
+    {
+        width: 100%;
+        padding: 25px;
+        text-align: justify;
+    }
+    .container_rules_links
+    {
+        border: none;
+        margin-top: 20px;
+    }
+    .container_rules_text ul
+    {
+        padding: 0;
+    }
+    .container_rules_links h6
+    {
+        margin: 10px 0 25px 0;
+    }
+    .container_cc_slider img
+    {
+        max-height: 700px;
+    }
+    .section_ap
+    {
+        height: auto;
+        padding: 50px 0;
+        background-image: -webkit-linear-gradient(#0e242c6f, #0e242c0a, #0e242c0a, #0e242c6f), url(../img/tourism/map-mobile.png);
+    }
+    .container_ap
+    {
+        flex-direction: column-reverse;
+    }
+    .container_ap_empty, .container_ap_info
+    {
+        width: 100%;
+    }
+    .container_ap_empty
+    {
+        height: 400px;
+    }
+    .section_contact
+    {
+        height: auto;
+    }
+    .donate_form 
+    {
+        padding: 20px 0;
+    }
+    .container_contact
+    {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .container_donate, .container_contact_us
+    {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .footer
+    {
+        height: 350px;
+    }
+    .sidenav_mobile
+    {
+        padding: 20px !important;
+    }
+    .sidenav_mobile img
+    {
+        height: 100px;
+        width: auto;
+    }
+    .sidenav_mobile li:first-of-type
+    {
+       height:110px !important ;
+       margin: 20px 0;
+    }
+
+}
+
+@media only screen and (max-width: 590px)
+{
+    .section_intro
+    {
+        height: 100vh;
+    }
+    .navbar
+    {
+        padding: 20px 10px 20px 40px;
+    }
+    
+    .container_intro_buttons
+    {
+        flex-direction: column-reverse;
+    }
+    .container_intro_buttons button
+    {
+        margin-bottom: 20px !important;
+    }
+    .section_overview
+    {
+        flex-direction: column-reverse;
+    }
+    .overview_info_container
+    {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .section_whattosee
+    {
+        flex-direction: column-reverse;
+    }
+    .whattosee_slider
+    {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    .whattosee_img_container div img
+    {
+        height: 140px;
+    }
+    .whattosee_text_container
+    {
+        padding: 50px 0;
+    }
+    .whattosee_slider #last_slide
+    {
+        display: none;
+    }
+    .community_content
+    {
+        flex-direction: column;
+    }
+    .community_text
+    {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .community_imgs div
+    {
+        height: 105px !important;
+    }
+    .container_rules
+    {
+        padding: 10px;
+    }
+    .container_cc_slider
+    {
+        margin: 0 10px;
+    }
+    .container_cc_slider img
+    {
+        max-height: 400px;
+    }
+    .container_ap_text
+    {
+        padding: 10px 0;
+        margin: 0;
+    }
+    .container_ap_empty, .container_ap_info
+    {
+        padding: 10px 35px;
+    }
+    .contact_us
+    {
+        padding: 10px 40px;
+    }
+    .contact_us_form .form-row
+    {
+        flex-direction: column;
+    }
+    .contact_us_form .form-group
+    {
+        width: 100%;
+    }
+    .contact_us_form
+    {
+        width: 100%;
+        padding: 0;
+    }
+    .donate_form
+    {
+        padding: 20px 37px;
+    }
+    .footer
+    {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .container_footer_park, .container_footer_contacts
+    {
+        width: 100%;
+        padding: 20px 40px;
+    }
+    .container_footer_contacts
+    {
+        padding-top: 50px;
+    }
+    .container_footer_park
+    {
+        padding-bottom: 50px;
+    }
+    
+
+} 
+
+@media only screen and (max-width: 320px)
+{
+    .container_Bazaruto
+    {
+        margin: 0px auto;
+    }
+    .container_cc_slider img
+    {
+        max-height: 300px;
+    }
+    .container_bazaruto_text
+    {
+        text-align: justify;
+    }
+} 

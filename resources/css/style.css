@@ -52,7 +52,7 @@
 
 *{margin:0; padding: 0;}
 *:focus{outline: none;}
-html,body{color: var(--font) !important; }
+html,body{color: var(--font) !important; scroll-behavior: smooth; }
 
 
 
@@ -126,21 +126,48 @@ html,body{color: var(--font) !important; }
     
 }
 
-
 .navbar
 {
-    background-color: transparent !important;
     box-shadow: unset !important;
     align-items: center;
     display: flex !important;
     justify-content: space-between;
-    width: 80%;
-    color: var(--font) !important;
-    height: 140px !important;
+    color: var(--font-normal) !important;
+    height: 110px !important;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 50px;
+    background-color: transparent;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
-
+#menu_icon
+{
+    font-size: 340%;
+}
+.navbar_scroll
+{
+    height: 60px !important;
+    background-color: white !important;
+    font-size: 70% !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.041), 0 3px 1px -2px rgba(0, 0, 0, 0.051), 0 1px 5px 0 rgba(0, 0, 0, 0.062) !important;
+    padding: 10px 10px 10px 40px !important;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.scroll_menu_icon
+{
+    color: var(--ap-blue) !important;
+}
+.small_main_logo
+{
+    height: 70px !important;
+}
 .nav_content ul li
 {
     margin: 0 10px;
@@ -194,7 +221,7 @@ html,body{color: var(--font) !important; }
     width: 80%;
     height: auto;
     flex: 1;
-    margin: 0 auto;
+    margin: 50px auto;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -262,9 +289,8 @@ html,body{color: var(--font) !important; }
 }
 .container_intro_buttons .donate
 {
-    background-color: var(--ap-blue) !important;
-    border: #0b4a61;
-    color: white;
+    background-color: white !important;
+    color: var(--ap-blue);
 
 }
 .container_intro_buttons .donate:hover
@@ -629,7 +655,7 @@ html,body{color: var(--font) !important; }
 .section_ap
 {
     height: 700px;
-    background-image: url(../img/tourism/ap_map.png);
+    background-image: -webkit-linear-gradient(#0e242c6f,#0e242c0a, #0e242c0a, #0e242c6f), url(../img/tourism/ap_map.png);
     background-size: cover;
     background-attachment:scroll;
     background-position-x: center;
@@ -691,7 +717,8 @@ html,body{color: var(--font) !important; }
     width: 100%;
     height: 100%;
     display: flex;
-
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .container_donate, .container_contact_us
 {
@@ -724,10 +751,177 @@ html,body{color: var(--font) !important; }
 }
 .container_donate
 {
-    background-image:-webkit-linear-gradient(#0b4a61cf,#0b4a6179, #0b4a611c), url(../img/tourism/map.png);
+    background-color: var(--font-normal);
+    background-image:-webkit-linear-gradient(#0b4a61cf,#0b4a6179, #0b4a611c);
     color: white;
     background-size: cover;
     background-attachment:scroll;
     background-position-x: right;
     background-position-y: center;
+}
+
+.contact_us
+{
+    padding: 10px 50px;
+}
+.contact_us_form
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contact_us_form .form-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.contact_us_form .form-group
+{
+    width: 50%;
+    padding: 5px !important;
+
+}
+.contact_us_form input, .contact_us_form textarea
+{
+    border: 1px solid #1414147e !important;
+    border-radius: 7px !important;
+    -webkit-border-radius: 7px !important;
+    -moz-border-radius: 7px !important;
+    -ms-border-radius: 7px !important;
+    -o-border-radius: 7px !important;
+    padding: 4px 12px !important;
+    font-size: 80% !important;
+    width: 90% !important;
+}
+.contact_us_form input
+{
+    height: 25px !important;
+}
+.contact_us_form textarea
+{
+    width: 100% !important;
+    min-height: 100px;
+    max-height: 150px;
+    padding-top: 20px;
+}
+.contact_us_form button
+{
+    font-family:'Times New Roman', Times, serif;
+    background-color: var(--font-normal);
+    text-transform: none;
+    color: white;
+    height: auto;
+    width: auto;
+    padding: 7px 50px;
+}
+.contact_us_form span
+{
+    color: red;
+    font-size: 90%;
+    margin-left: 3px;
+}
+
+.footer
+{
+    height: 300px;
+    width: 100%;
+    background-color: var(--font-normal);
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+}
+.container_footer_park, .container_footer_contacts
+{
+    width: 50%;
+    display: flex;
+    padding: 50px 70px;
+    height: 100%;
+    color: white;
+}
+
+.container_footer_park
+{
+    flex-direction: column;
+}
+.container_footer_contacts
+{
+    flex-direction: row;   
+}
+.container_footer_contacts a
+{
+    font-size: 80%;
+}
+.footer_logos
+{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 10px 0;
+}
+.footer_logos img
+{
+    height: 100%;
+    width: auto;
+    margin: 0 5px;
+}
+.footer_logos img:first-of-type
+{
+    margin-left: 0;
+}
+.container_footer_park p
+{
+    margin: 10px 0;
+    font-size: 80%;
+}
+.footer_links
+{
+    width: 70%;
+}
+.li_social_links
+{
+    margin: 10px 0;
+}
+.li_social_links a
+{
+    color: white;
+    margin: 0 5px;
+    font-size: 120%;
+}
+.li_social_links a:first-of-type
+{
+    margin-left: 0;
+}
+.footer_upbtn
+{
+    width: 30%;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.footer_upbtn button
+{
+    background-color: white;
+    color: var(--font-normal);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_upbtn button:focus
+{
+    background-color: white;
+    color: var(--font-normal);
+}
+
+.footer_upbtn button .material-icons
+{
+    font-size: 256%;
 }

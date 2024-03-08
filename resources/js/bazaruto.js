@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+  
     $('.container_cc_slider').slick({
       lazyLoad: 'ondemand',
       slidesToShow: 1,
@@ -25,7 +25,7 @@ $(document).ready(function(){
             slidesToShow: 1,
             arrows: true,
             slidesToScroll: 1,
-            dots: false
+            dots: true
           }
         },
         {
@@ -33,14 +33,20 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             dots: false
           }
         },
        
       ]
     });
+
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var fadeInElements = document.querySelectorAll('.fade-in');
@@ -65,3 +71,31 @@ document.addEventListener('DOMContentLoaded', function() {
   // Check when scrolling
   window.addEventListener('scroll', checkViewport);
 });
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+
+  var navbar = document.getElementById("navbar_id");
+  var sticky = document.getElementById("nav_wrapper");
+  var menu = document.getElementById("menu_icon");
+
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    
+    navbar.classList.add("navbar_scroll");
+    sticky.classList.add("navbar-fixed");
+    menu.classList.add("scroll_menu_icon");
+  } 
+  else {
+    navbar.classList.remove("navbar_scroll");
+    sticky.classList.remove("navbar-fixed");
+    menu.classList.remove("scroll_menu_icon");
+  }
+}
+
+function topFunction() 
+{
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
