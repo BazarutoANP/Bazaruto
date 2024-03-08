@@ -163,7 +163,10 @@
     {
         padding: 20px 10px 20px 40px;
     }
-    
+    .container_Bazaruto
+    {
+        padding: 0 auto;
+    }
     .container_intro_buttons
     {
         flex-direction: column-reverse;
