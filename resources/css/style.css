@@ -621,7 +621,7 @@ html,body{color: var(--font) !important; scroll-behavior: smooth; }
 }
 .container_cc_slider img
 {
-    height:auto;
+    max-height:450px;
     width: 100%;
 }
 .cc_slide
