@@ -1,10 +1,18 @@
 @media only screen and (max-width: 1024px) 
 {
-
+    .mapouter, .gmap_canvas
+    {
+        width: 400px !important;
+    }
 }
 
 @media only screen and (max-width: 912px) 
 {
+    .mapouter, .gmap_canvas
+    {
+        width: 600px !important;
+        margin-bottom: 20px;
+    }
     .container_Bazaruto
     {
         padding-top: 0;
@@ -155,6 +163,10 @@
 
 @media only screen and (max-width: 590px)
 {
+    .mapouter, .gmap_canvas
+    {
+        width: 350px !important;
+    }
     .section_intro
     {
         height: 100vh;
@@ -167,6 +179,9 @@
     .container_Bazaruto
     {
         margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
     }
     .container_intro_buttons
     {
@@ -236,6 +251,7 @@
     {
         padding: 10px 0;
         margin: 0;
+        margin-bottom: 15px;
     }
     .container_ap_empty, .container_ap_info
     {
@@ -284,8 +300,21 @@
 
 } 
 
+@media only screen and (max-width: 375px)
+{
+    .mapouter, .gmap_canvas
+    {
+        width: 270px !important;
+    }
+}
+
 @media only screen and (max-width: 320px)
 {
+    .mapouter, .gmap_canvas
+    {
+        width: 220px !important;
+        height: 140px !important;
+    }
     .container_Bazaruto
     {
         margin: 0px auto;

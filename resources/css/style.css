@@ -621,8 +621,8 @@ html,body{color: var(--font) !important; scroll-behavior: smooth; }
 }
 .container_cc_slider img
 {
-    max-height:450px;
-    width: auto;
+    height:auto;
+    width: 100%;
 }
 .cc_slide
 {
@@ -764,6 +764,12 @@ html,body{color: var(--font) !important; scroll-behavior: smooth; }
 {
     padding: 10px 50px;
 }
+.div_container_map
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .contact_us_form
 {
     width: 90%;
@@ -811,6 +817,12 @@ html,body{color: var(--font) !important; scroll-behavior: smooth; }
     max-height: 150px;
     padding-top: 20px;
 }
+.contact_us_form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .contact_us_form button
 {
     font-family:'Times New Roman', Times, serif;
@@ -820,6 +832,7 @@ html,body{color: var(--font) !important; scroll-behavior: smooth; }
     height: auto;
     width: auto;
     padding: 7px 50px;
+    margin-bottom: 20px;
 }
 .contact_us_form span
 {
